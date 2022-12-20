@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "watch:day5": "nodemon src/day5",
+    "watch:day4": "nodemon src/day4",
+    "watch:day3": "nodemon src/day3",
+    "watch:day2": "nodemon src/day2",
+    "watch:day1": "nodemon src/day1"
+  }
+}
