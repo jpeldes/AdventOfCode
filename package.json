@@ -3,6 +3,7 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
+    "watch:day7": "nodemon src/day7",
     "watch:day6": "nodemon src/day6",
     "watch:day5": "nodemon src/day5",
     "watch:day4": "nodemon src/day4",
