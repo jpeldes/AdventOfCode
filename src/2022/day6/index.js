@@ -1,4 +1,4 @@
-const { getLinesFromFile } = require('../utils')
+const { getLinesFromFile } = require('../getLinesFromFile')
 
 const INDEX_TO_START_FROM = 3
 

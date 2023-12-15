@@ -1,4 +1,4 @@
-const { getLinesFromFile } = require('../utils')
+const { getLinesFromFile } = require('../getLinesFromFile')
 
 const splitPairToSections = (pair) =>
   pair.split('-').map((numberAsString) => Number(numberAsString))

@@ -1,4 +1,4 @@
-const { getLinesFromFile } = require('../utils')
+const { getLinesFromFile } = require('../getLinesFromFile')
 const { parseInput } = require('./parseInput')
 
 const processInstruction = (

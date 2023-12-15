@@ -1,4 +1,4 @@
-const { getLinesFromFile } = require('../utils')
+const { getLinesFromFile } = require('../getLinesFromFile')
 
 function getIsLineStartsWithNumber(line = '') {
   const firstPart = line.split(' ')[0]

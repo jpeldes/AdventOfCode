@@ -1,4 +1,4 @@
-const { getLinesFromFile } = require('../utils')
+const { getLinesFromFile } = require('../getLinesFromFile')
 
 function calculateShapeScore(myMove) {
   if (isRock(myMove)) return 1
