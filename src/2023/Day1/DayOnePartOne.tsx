@@ -1,4 +1,4 @@
-export const DayOne = ({ input }: { input: string[] }) => {
+export const DayOnePartOne = ({ input }: { input: string[] }) => {
     const lineSums = getEveryLineSum(input)
 
     const sum = lineSums.reduce((acc, curr) => acc + curr, 0)
