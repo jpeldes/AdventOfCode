@@ -15,6 +15,8 @@ export const useFileContent = (filePath: string) => {
         getFile()
     })
 
+    if (!fileContent) return []
+
     const linesAsArray = fileContent.split('\n')
     return linesAsArray
 }

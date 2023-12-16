@@ -1,11 +1,10 @@
-export const Day1 = ({ input }: { input: string[] }) => {
+export const DayOne = ({ input }: { input: string[] }) => {
     const lineSums = getEveryLineSum(input)
 
     const sum = lineSums.reduce((acc, curr) => acc + curr, 0)
 
     return (
         <div>
-            <h1>Day 1</h1>
             <pre>
                 <code>{input.join(' + ')}</code>
             </pre>
