@@ -1,4 +1,4 @@
-import { DayOne } from './Day1'
+import { DayOne } from './day1'
 
 export const TwentyTwentyThree = () => {
     return (
