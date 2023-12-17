@@ -1,23 +1,22 @@
+import { CodeBlock } from '../../components/CodeBlock'
+
 type Props = { input: string[] }
 
 export const DayTwoPartOne = ({ input }: Props) => {
     const { games, sum } = parseInput(input)
 
+    const possibleGames = games
+        .filter((game) => game.isPossible)
+        .map((game) => JSON.stringify(game, undefined, 2).replace(/\n/gm, '\t').replace(/\"/g, ''))
     return (
         <article>
             <h3>Sum</h3>
             <pre>
                 <code>{sum}</code>
             </pre>
+
             <h3>Possible games</h3>
-            <pre>
-                <code>
-                    {games
-                        .filter((game) => game.isPossible)
-                        .map((game) => JSON.stringify(game, undefined, 2).replace(/\n/gm, '\t').replace(/\"/g, ''))
-                        .join('\n')}
-                </code>
-            </pre>
+            <CodeBlock stringArray={possibleGames} />
             <p>Input</p>
             <pre>
                 <code>{input.join('\t\t')}</code>

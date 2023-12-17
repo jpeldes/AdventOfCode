@@ -1,0 +1,40 @@
+.code-block {
+    position: relative;
+    max-height: calc(1.5em * 10); /* Assuming 1.5em per line */
+    overflow: hidden;
+}
+
+.code-block::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Adjust this value to change the height of the fade effect */
+    background: linear-gradient(to bottom, transparent, white);
+    display: none;
+}
+
+.code-block.expanded {
+    max-height: none;
+}
+
+.code-block.expanded::before {
+    display: none;
+}
+
+.code-block.expandable::after {
+    content: attr(data-lines) ' lines';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    color: var(--text-bright);
+    background: var(--background-alt);
+}
+.code-block.expandable.expanded::after {
+    bottom: 12px;
+}
+.code-block.expandable.expanded code {
+    padding-bottom: 42px;
+}
